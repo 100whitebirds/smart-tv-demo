@@ -1,6 +1,5 @@
 import React, { MutableRefObject, useEffect, useRef, useState } from 'react'
 import './App.css'
-import volvoTrucks from './assets/volvoTrucks.mp4'
 import firstBanner from './assets/firstBanner.png'
 import qrCode from './assets/qrCode.png'
 import PhoneInput from './components/PhoneInput/PhoneInput'
@@ -32,7 +31,7 @@ function App() {
   return (
     <div className='appContainer'>
       <video ref={vidRef} autoPlay loop className='video'>
-        <source src ={volvoTrucks} type='video/mp4' />
+        <source src='volvoTrucks.mp4' type='video/mp4' />
       </video>
       { firstBannerVisible && 
         <div className='firstBanner'>
