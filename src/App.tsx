@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef, useState } from 'react'
+import React, { MutableRefObject, useEffect, useRef, useState } from 'react'
 import './App.css'
 import firstBanner from './assets/firstBanner.png'
 import qrCode from './assets/qrCode.png'
@@ -11,7 +11,7 @@ function App() {
   const [phoneInputVisible, setPhoneInputVisible] = useState(false)
   const vidRef = useRef() as MutableRefObject<HTMLVideoElement>
   const composite = useCompositeState()
-
+  
   const handlePlayVideo = () => {
     vidRef.current.paused ? vidRef.current.play() : vidRef.current.pause()
   }

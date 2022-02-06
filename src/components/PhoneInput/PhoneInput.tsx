@@ -33,6 +33,21 @@ const PhoneInput = ({ visible }: PhoneInputProps) => {
   const composite = useCompositeState({ wrap: true })
 
   useEffect(() => {
+    var keyboardInput = ''
+    const reg = new RegExp('^[0-9]$')
+    document.addEventListener('keydown', (e) => {  
+      if (e.key === 'Backspace') {
+        keyboardInput = keyboardInput.slice(0, -1)
+        setInputDigits(keyboardInput)
+      } 
+      if (reg.test(e.key) && keyboardInput.length < 10){
+        keyboardInput += e.key
+        setInputDigits(keyboardInput)
+      } 
+    })
+  }, [phoneInputOpened])
+
+  useEffect(() => {
     setPhoneInputOpened(visible)
     return () => {
       setInputDigits('')
@@ -125,12 +140,13 @@ const PhoneInput = ({ visible }: PhoneInputProps) => {
                 <h2>Согласие на обработку персональных данных</h2>
               </div>
           }
-          <div 
+          <button 
+            disabled={!(consentChecked && inputDigits.length === 10)}
             className={(consentChecked && inputDigits.length === 10) ? s.submitButtonEnabled : s.submitButton}
             onClick={handleSumbit}
           >
             ПОДТВЕРДИТЬ НОМЕР
-          </div>
+          </button>
         </div>
       } 
       {phoneInputOpened && formSubmitted &&
