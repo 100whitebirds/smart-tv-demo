@@ -1,6 +1,7 @@
 .appContainer {
   height: 720px;
   width: 1280px;
+  position: fixed;
 }
 
 .video {
