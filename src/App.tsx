@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useEffect, useRef, useState } from 'react'
+import React, { MutableRefObject, useRef, useState } from 'react'
 import './App.css'
 import firstBanner from './assets/firstBanner.png'
 import qrCode from './assets/qrCode.png'
