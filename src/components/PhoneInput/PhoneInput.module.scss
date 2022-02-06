@@ -1,0 +1,182 @@
+.phoneInputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 720px;
+  background-color: #86D3F4;
+  position: absolute;
+  left: 0;
+  white-space: pre-line;
+  animation: fadein 0.5s forwards;
+  
+  .inputBlock {
+    .inputTag {
+      font-size: 26px;
+      text-align: center;
+    }
+
+    .telNumber {
+      margin-right: auto;
+      margin-left: 78px;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: roboto;
+      width: 268px;
+    }
+
+    .telNumberOnError {
+      @extend .telNumber;
+      color: red;
+    }
+
+    h2 {
+      margin-left: 60px;
+      margin-right: 60px;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+
+  .inputError {
+    font-size: 14px;
+    color: red;
+  }
+
+  .numpad {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 43px;
+    margin-right: 43px;
+  
+    .row {
+      display: flex;
+
+      .digitButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 52px;
+        border: 2px solid black;
+        margin: 5px;
+        box-sizing: border-box; 
+        background-color: #86D3F4;
+        
+        &:hover {
+          background-color: black;
+          color: white;
+          transition-duration: 0.3s;
+        }
+  
+        &:focus {
+          background-color: black;
+          color: white;
+          transition-duration: 0.3s;
+        }
+  
+        &:active {
+          transform: scale(0.8);
+          transition-duration: 0.2s
+        }
+      }
+  
+      .clearInputButton {
+        @extend .digitButton;
+        width: 186px;
+        height: 52px;
+      }
+    }
+  }
+
+  .consentForPersonalData {
+    display: flex;
+    width: 284px;
+    height: 52px;
+    padding-left: 48px;
+    margin-right: 48px;
+    align-items: center;
+    justify-content: center;
+    
+    .checkBox {
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+
+    input {
+      display: none;
+    }
+    
+    input:checked + .checkBox,
+    div.checked {
+      background-image: url("../../assets/check.svg");
+      background-size: 100% 100%;
+    }
+    
+    h2 {
+      padding-left: 20px;
+      color: #565656;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .submitButton {
+    display: flex;
+    border: 1px solid #4E4E4E;
+    color: #4E4E4E; 
+    width: 284px;
+    height: 52px;
+    margin: 19px 48px 68px 48px;
+    background-color: #86D3F4;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .submitButtonEnabled {
+    @extend .submitButton;
+    border: 2px solid black;
+    color: black;
+
+    &:hover {
+          background-color: black;
+          color: white;
+          transition-duration: 0.3s;
+    }
+
+    &:focus {
+      background-color: black;
+      color: white;
+      transition-duration: 0.3s;
+    }
+
+    &:active {
+      transform: scale(0.8);
+      transition-duration: 0.2s
+    }
+  }
+}
+
+.resultBanner {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  animation: fadein 0.5s forwards;
+
+  img {
+    height: 720px;
+    width: 380px;
+  }
+}
+
+@keyframes fadein {
+  0%{ opacity: 0 }
+  100% { opacity: 1 }
+}

@@ -1,4 +1,4 @@
-.app-container {
+.appContainer {
   height: 720px;
   width: 1280px;
 }
@@ -12,4 +12,81 @@
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+.firstBanner {
+  opacity: 0;
+  animation: fadein; 
+  animation-duration: 0.5s; 
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {opacity: 0}
+  100%{opacity: 1}
+} 
+
+.firstBannerImg {
+  height: 357px;
+  width: 251px;
+  position: absolute;
+  left: 1;
+  right: 0;
+  top: 220px;
+}
+
+.okButton {
+  background-color: transparent;
+  border: none;
+  width: 157px;
+  height: 52px;
+  position: absolute;
+  left: 1;
+  right: 47px;
+  top: 515px;
+  cursor: pointer;
+}
+
+.closeButton {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 88px;
+    height: 52px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+
+.closeButton:hover {
+  color: white;
+  background-color: black;
+}
+
+.closeButton:focus {
+  color: white;
+  background-color: black;
+}
+
+.qrCodeBlock {
+  color: white;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 300px;
+  align-items: center;
+}
+
+.qrCode {
+  height: 110px;
+  width: 110px;
+}
+
+h3 {
+  color: white;
+  font-size: 14px;
+  text-align: right;
+  margin-right: 10px;
 }
