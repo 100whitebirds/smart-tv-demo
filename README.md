@@ -2,7 +2,7 @@
 
 Advertising Smart-TV microsite built for job interview 
 
-Demo: https://noun-declinator.vercel.app
+Demo: https://smart-tv-demo.vercel.app
 
 <h2> Screenshots: </h2>
 
