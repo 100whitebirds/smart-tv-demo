@@ -10,14 +10,16 @@ Demo: https://smart-tv-demo.vercel.app
 
 <h3> Keyboard navigation available</h3>
 Use "tab" to navigate and "enter" to submit
+
 <p float="left">
- <img src="screenshots/navigation1.png" width="300">
- <img src="screenshots/navigation4.png" width="300">
+ <img src="screenshots/navigation1.png" height="1000" height="1000" style="margin-right: 50px;">
+ <img src="screenshots/navigation4.png" height="1000" height="1000">
 </p>
 Use arrow keys to navigate and "enter" to submit 
+
 <p float="left">
- <img src="screenshots/navigation3.png" width="300">
- <img src="screenshots/navigation2.png" width="300">
+ <img src="screenshots/navigation2.png" height="1000">
+ <img src="screenshots/navigation3.png" height="1000">
 </p>
 
 
