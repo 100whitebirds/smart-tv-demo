@@ -17,7 +17,7 @@ Use "tab" + "enter" to navigate on menu items and arrow keys + "enter" to input 
  <img src="screenshots/navigation3.png" height="370">
 </p>
 Also you can use numpad to put digits in place
-<img src="screenshots/keyboardInpu.png" width="400">
+<img src="screenshots/keyboardInput.png" width="400">
 
 
 <h2> To run locally: </h2>
