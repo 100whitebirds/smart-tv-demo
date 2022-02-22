@@ -7,6 +7,11 @@ Demo: https://smart-tv-demo.vercel.app
 <h2> Screenshots: </h2>
 
 <img src="screenshots/screenshot.png" width="800">
+<h3> Keyboard navigation available</h3>
+<img src="screenshots/navigation1.png" width="800">
+<img src="screenshots/navigation2.png" width="300">
+<img src="screenshots/navigation3.png" width="300">
+<img src="screenshots/navigation4.png" width="300">
 
 <h2> To run locally: </h2>
  
