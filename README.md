@@ -11,10 +11,12 @@ Demo: https://smart-tv-demo.vercel.app
 <h3> Keyboard navigation available:</h3>
 Use "tab" + "enter" to navigate on menu items and arrow keys + "enter" to input digits
 <p float="left">
- <img src="screenshots/navigation1.png" height="400">
- <img src="screenshots/navigation4.png" height="400">
- <img src="screenshots/navigation2.png" height="400">
- <img src="screenshots/navigation3.png" height="400">
+ <img src="screenshots/navigation1.png" height="450">
+ <img src="screenshots/navigation4.png" height="450">
+</p>
+<p float="left">
+ <img src="screenshots/navigation2.png" height="450">
+ <img src="screenshots/navigation3.png" height="450">
 </p>
 Also you can use numpad to put digits in place
 <img src="screenshots/keyboardInput.png" height="400">
