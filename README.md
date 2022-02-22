@@ -13,12 +13,9 @@ Demo: https://smart-tv-demo.vercel.app
 <br/><br/>
 
 <p float="left">
- <div>
   Use "tab" to navigate and "enter" to submit 
   <img src="screenshots/navigation1.png" height="400">
   <img src="screenshots/navigation4.png" height="400">
- </div>
- 
  <img src="screenshots/navigation2.png" height="400">
  <img src="screenshots/navigation3.png" height="400">
 </p>
