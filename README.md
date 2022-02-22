@@ -14,7 +14,8 @@ Demo: https://smart-tv-demo.vercel.app
  <img src="screenshots/navigation1.png" width="300">
  <img src="screenshots/navigation2.png" width="300">
 </p>
-<p float="left>
+
+<p float="left">
  <img src="screenshots/navigation3.png" width="300">
  <img src="screenshots/navigation4.png" width="300">
 </p>
